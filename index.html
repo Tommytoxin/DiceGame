@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Game</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>Dice Game</h1>
+  <div class="game-container"> <div class="player-names">
+      <input id="player1" class="playerName" type="text" placeholder="Player 1 name">
+      <span class="spacer"></span>
+      <input id="player2" class="playerName" type="text" placeholder="Player 2 name">
+    </div>
+    <div class="dice-container"> <span id="player1Dice"></span>  <span id="player2Dice"></span>  </div>
+  </div>
+  <br>
+  <button id="rollButton">
+    🎲 Roll
+  </button>
+  <button id="newGameButton"> 🎲 Reset</button>
+  <div id="scoreboard">
+    <div id="player1Score">Player 1: 0</div>
+    <div id="player2Score">Player 2: 0</div>
+
+  </div>
+  <div id="results"></div>
+  <div class="congratulations">
+    <span class="red">Congratulations</span>
+    <span class="green">Congratulations</span>
+    <span class="blue">Congratulations</span>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="center">Created by Thomas, Rethabile & Nothile</p>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+</body>
+</html>

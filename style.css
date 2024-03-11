@@ -1,0 +1,131 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: hsl(0, 2%, 26%);
+    padding: 50px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    font-size: 50px;
+    color: #CB00F5;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+    -webkit-text-stroke: 2px black; /* for Chrome and Safari */
+}
+
+input, button {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#rollButton {
+    background-color: #ff0000;
+    color: white; /* Change the text color to white for better visibility */
+}
+#newGameButton {
+    background-color: #ff0000;
+    color: white; /* Change the text color to white for better visibility */
+}
+#scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styles for screens larger than 600px */
+@media (min-width: 600px) {
+    #scoreboard {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+/* Styles for screens smaller than or equal to 600px */
+@media (max-width: 600px) {
+    #scoreboard {
+        width: 100%;
+    }
+    input, button {
+        font-size: 14px;
+    }
+}
+
+#results {
+
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.dice {
+    font-size: 100px;
+    color: #CB00F5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes fly {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.congratulations span {
+    position: absolute;
+    font-size: 2em;
+    animation: fly 3s linear infinite;
+}
+
+.red {
+    color: red;
+    animation-delay: 0s;
+}
+
+.green {
+    color: green;
+    animation-delay: 1s;
+}
+
+.blue {
+    color: red;
+    animation-delay: 2s;
+}
+
+input[type="text"] {
+    font-weight: bold;
+    color: red;
+    border-radius: 20px;
+}
+
+.playerName {
+    font-weight: bold;
+    color: red;
+    border-radius: 20px;
+}
+
+/*foorer*/
+.footer {
+    background-color: transparent;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #CB00F5;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  
